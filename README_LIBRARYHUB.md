@@ -59,16 +59,6 @@ Once the system is running:
 
 ---
 
-### 💻 Example Code Snippet
-```php
-// Sample PHP code to fetch all books
-$query = "SELECT * FROM books";
-$result = mysqli_query($conn, $query);
-
-while ($row = mysqli_fetch_assoc($result)) {
- echo "<tr><td>{$row['book_title']}</td><td>{$row['author']}</td></tr>";
-}
-
 ## 🤝 Contributors
 
 👩‍💻 Thea Emerald Sangayab
