@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" width="200" alt="LibraryHub Logo">
+  <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" width="200" alt="Books Logo">
 </p>
 
 <p align="center">
@@ -32,54 +32,53 @@ The system was developed using **HTML, CSS, JavaScript, PHP, and MySQL**, integr
 - 👩‍🎓 **User Management** — Manage student accounts and borrowing history.  
 - 📊 **Dashboard Overview** — Displays total books, borrowers, and active transactions.  
 - 🔎 **Search and Filter** — Quickly find books or users by title, ID, or category.  
-- 💾 **Database Integration** — Secure data handling with MySQL and PHP backend.  
+- 📤 **Borrow & Return Tracking** — Logs every transaction for record accuracy.  
+- 📅 **Due Date Reminders** — Notifies users about upcoming book return deadlines.
 
 ---
 
-## 🛠️ Installation Instructions
-1. Install [XAMPP](https://www.apachefriends.org/index.html) on your computer.  
-2. Copy the project folder named `libraryhub` into your **htdocs** directory.  
-3. Open **phpMyAdmin** and create a new database named `libraryhub_db`.  
-4. Import the included `.sql` file into your database.  
-5. Open your browser and run:
-6. Log in using the provided credentials to access the dashboard.
+## 🖥️ Installation Instructions
+Follow these steps to set up the project locally:
+
+1. **Install XAMPP** or any local PHP server.  
+2. Place the project folder named `libraryhub` inside the `htdocs` directory.  
+3. Open **phpMyAdmin** and create a database named `library_db`.  
+4. Import the provided `library_db.sql` file (included in the project folder).  
+5. Open your web browser and go to: 
+6. Log in using the default credentials (for admin or test user).
 
 ---
 
-## 💻 Usage
-1. **Admin:**  
-- Log in and manage all books and users.  
-- Monitor borrowing activities.  
-- Update or delete existing records.  
-2. **User:**  
-- View available books.  
-- Borrow and return books.  
-- Check transaction history.
+## 🚀 Usage
+Once the system is running:
+1. **Admin Login** — Access the dashboard to manage books, users, and transactions.  
+2. **Add Books** — Input new book details and track availability.  
+3. **Borrow/Return** — Record student borrowing and return dates.  
+4. **Search Records** — Use the search bar to find books or members easily.  
+5. **Logout** — End your session securely after use.
 
 ---
 
 ## 🖼️ Screenshots or Code Snippets
-### 📸 Dashboard Example
-![Dashboard Screenshot](assets/dashboard.png)
 
-### 💻 Sample Code
+### 📊 Dashboard View
+![Dashboard](https://cdn-icons-png.flaticon.com/512/2921/2921222.png)
+
+### 💻 Example Code Snippet
 ```php
-<?php
-include 'connection.php';
+// Sample PHP code to fetch all books
+$query = "SELECT * FROM books";
+$result = mysqli_query($conn, $query);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
- $bookTitle = $_POST['title'];
- $author = $_POST['author'];
- $category = $_POST['category'];
-
- $sql = "INSERT INTO books (title, author, category) VALUES ('$bookTitle', '$author', '$category')";
- mysqli_query($conn, $sql);
- echo "Book added successfully!";
+while ($row = mysqli_fetch_assoc($result)) {
+ echo "<tr><td>{$row['book_title']}</td><td>{$row['author']}</td></tr>";
 }
-?>
 
-## 🤝 Contributing
+## 🤝 Contributors
 
+👩‍💻 Thea Emerald Sangayab
+
+👩‍💻 Queenie De Leon
 Contributions and ideas to improve the system are welcome!  
 If you’d like to help improve functionality or optimize performance, feel free to fork this repository and submit a pull request.
 
@@ -93,6 +92,6 @@ If you discover a bug or security issue, please report it through the issues tab
 
 ## 🪪 License
 
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
+This project is licensed for Educational Purposes Only.
+You are free to study, modify, and use this system for learning and academic use.
    
