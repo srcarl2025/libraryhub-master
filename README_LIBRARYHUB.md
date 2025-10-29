@@ -61,9 +61,9 @@ Once the system is running:
 
 ## 🤝 Contributors
 
-👩‍💻 Thea Emerald Sangayab
+👩‍💻 Rea Carl Solomon
 
-👩‍💻 Queenie De Leon
+👩‍💻 Pearl Joy Casuga
 Contributions and ideas to improve the system are welcome!  
 If you’d like to help improve functionality or optimize performance, feel free to fork this repository and submit a pull request.
 
