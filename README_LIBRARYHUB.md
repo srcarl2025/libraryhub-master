@@ -59,11 +59,6 @@ Once the system is running:
 
 ---
 
-## 🖼️ Screenshots or Code Snippets
-
-### 📊 Dashboard View
-![Dashboard](https://cdn-icons-png.flaticon.com/512/2921/2921222.png)
-
 ### 💻 Example Code Snippet
 ```php
 // Sample PHP code to fetch all books
